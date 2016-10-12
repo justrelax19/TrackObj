@@ -54,6 +54,17 @@ def main():
 			(r, roiBox) = cv2.CamShift(backProj, roiBox, termination)
 			pts = np.int0(cv2.cv.BoxPoints(r))
 			
+			#coordinates contain the coordinates of the tracked object
+			coordinates = r[0]
+			# x, y contains the coordinates
+			x = int(coordinates[0])
+			y = int(coordinates[1])
+			#print ('x = '+ str(x))
+			#print ('y = '+ str(y))
+			#move(x,y)
+			#mouse controlling actions
+			py.moveTo(int(x*2.5),int(y*2))
+			
 			
 			#draws a circle around the center from x,y
 			cv2.circle(frame, (int(x), int(y)), 4, (0, 0, 255), 2)
