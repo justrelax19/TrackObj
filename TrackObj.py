@@ -7,6 +7,24 @@ frame = None
 roiPts = []
 inputMode = False
 
+def move (x,y):
+    #the function to move the arrow keys with coordinates as input
+    if x < 212 :
+        print ('R')
+        py.press('right')
+    elif x > 426 :
+        print ('L')
+        py.press('left')
+    else:
+        if y < 160 :
+            print ('UP')
+            py.press('up')
+        elif y > 320 :
+            print ('DOWN')
+            py.press('down')
+        else :
+            print ("N")
+
 def main():
 	
 	
