@@ -24,6 +24,17 @@ def move (x,y):
             py.press('down')
         else :
             print ("N")
+			
+			
+def selectROI(event, x, y, flags, param):
+	
+	global frame, roiPts, inputMode
+
+	
+	if inputMode and event == cv2.EVENT_LBUTTONDOWN and len(roiPts) < 4:
+		roiPts.append((x, y))
+		cv2.circle(frame, (x, y), 4, (0, 255, 0), 2)
+		cv2.imshow("frame", frame)
 
 def main():
 	
