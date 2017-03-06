@@ -19,6 +19,20 @@ TECHNOLOGY USED
 
 4.Camshift Algorithm
 
+LIBRARIES REQUIRED 
+
+1. OpenCV
+2. NumPy
+3. Tkinter
+4. Pyautogui
+5. Ldtp
+6. Selenium
+7. Pygame
+
 TO RUN THE PROJECT
 
-run final.py file
+1. Run final.py file
+2. When the camera is open press i to get into training mode and select 4 poins maing a perimeter of the object,then press enter to get into tracking mode
+
+
+
