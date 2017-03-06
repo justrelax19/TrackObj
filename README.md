@@ -18,3 +18,7 @@ TECHNOLOGY USED
 3.Numpy
 
 4.Camshift Algorithm
+
+TO RUN THE PROJECT
+
+run final.py file
